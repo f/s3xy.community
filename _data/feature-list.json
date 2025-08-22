@@ -1,0 +1,1078 @@
+{
+  "features": [
+    {
+      "id": 1,
+      "name": "0%",
+      "category": "Regen Braking",
+      "notes": "First press will turns OFF the regen. A second will return it to default"
+    },
+    {
+      "id": 2,
+      "name": "100%",
+      "category": "Regen Braking",
+      "notes": "First press will set the regen on 100%. A second will return it to default"
+    },
+    {
+      "id": 3,
+      "name": "25%",
+      "category": "Regen Braking",
+      "notes": "First press will set the regen on 25%. A second will return it to default"
+    },
+    {
+      "id": 4,
+      "name": "50%",
+      "category": "Regen Braking",
+      "notes": "First press will set the regen on 50%. A second will return it to default"
+    },
+    {
+      "id": 5,
+      "name": "75%",
+      "category": "Regen Braking",
+      "notes": "First press will set the regen on 75%. A second will return it to default"
+    },
+    {
+      "id": 6,
+      "name": "AC Off",
+      "category": "Climate Control",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 7,
+      "name": "AC On",
+      "category": "Climate Control",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 8,
+      "name": "AC Toggle",
+      "category": "Climate Control",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 9,
+      "name": "Acceleration",
+      "category": "Acceleration",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 10,
+      "name": "All Heaters Off",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 11,
+      "name": "All Rear Off",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 12,
+      "name": "Ambient Light Effects",
+      "category": "Automations",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 13,
+      "name": "Autopilot Hands-on",
+      "category": "Autopilot",
+      "notes": "This feature works in the US, Canada, Korea, and Thailand. Dismisses the Autopilot Nag."
+    },
+    {
+      "id": 14,
+      "name": "Autopilot MAX",
+      "category": "Autopilot",
+      "notes": "Requires Gen 2 for Highland and Model S/X. Set the speed to the current speed limit(including offset)"
+    },
+    {
+      "id": 15,
+      "name": "Autopilot Nag",
+      "category": "Dashboard",
+      "notes": "Requires Gen 2 and Front Installation. Displays the Tesla 'nag' reminder as a blinking alert in the dashboard."
+    },
+    {
+      "id": 16,
+      "name": "Autopilot ON",
+      "category": "Autopilot",
+      "notes": "Requires Gen 2 and Front Installation. Displays the Tesla 'nag' reminder as a blinking alert in the dashboard."
+    },
+    {
+      "id": 18,
+      "name": "Autopilot Penalty Prevention",
+      "category": "Automations",
+      "notes": "Disables Autopilot on speeds above 140km/h 85mp/h. Requires Gen2 Commander for Model S/X"
+    },
+    {
+      "id": 19,
+      "name": "Autopilot Submenu",
+      "category": "Autopilot",
+      "notes": "Disables Autopilot on speeds above 140km/h 85mp/h. Requires Gen2 Commander for Model S/X"
+    },
+    {
+      "id": 21,
+      "name": "Backrest",
+      "category": "Seat Adjustment",
+      "notes": "Move Driver or Passenger backrest backwards and forwards.Only Passenger on Model X"
+    },
+    {
+      "id": 22,
+      "name": "Battery Pre-Heating",
+      "category": "Charging",
+      "notes": "Move Driver or Passenger backrest backwards and forwards.Only Passenger on Model X"
+    },
+    {
+      "id": 23,
+      "name": "Bioweapon Defence",
+      "category": "Climate Control",
+      "notes": "Pairing with the vehicle is required"
+    },
+    {
+      "id": 24,
+      "name": "Blind Spot",
+      "category": "Dashboard",
+      "notes": "Requires Gen 2 and Front Installation. Displays blind spot indicators on both sides of the dashboard."
+    },
+    {
+      "id": 25,
+      "name": "Both",
+      "category": "Seat Adjustment",
+      "notes": "Move Driver or Passenger seat and backrest all together. Only Passenger on Model X"
+    },
+    {
+      "id": 26,
+      "name": "Brake Light",
+      "category": "Dashboard",
+      "notes": "Move Driver or Passenger seat and backrest all together. Only Passenger on Model X"
+    },
+    {
+      "id": 27,
+      "name": "Camp Mode",
+      "category": "Climate Control",
+      "notes": "Pairing with the vehicle is required"
+    },
+    {
+      "id": 28,
+      "name": "Charge Port",
+      "category": "Charging",
+      "notes": "Opening/Closing or Unlock if charging cable inside."
+    },
+    {
+      "id": 29,
+      "name": "Child Unlock Both",
+      "category": "Lock / Unlock",
+      "notes": "The state is not visualized on the Main display."
+    },
+    {
+      "id": 30,
+      "name": "Child Unlock Left",
+      "category": "Lock / Unlock",
+      "notes": "The state is not visualized on the Main display."
+    },
+    {
+      "id": 31,
+      "name": "Child Unlock Right",
+      "category": "Lock / Unlock",
+      "notes": "The state is not visualized on the Main display."
+    },
+    {
+      "id": 32,
+      "name": "Chill",
+      "category": "Acceleration",
+      "notes": "State change is not visualized on Tesla's display. Each press will set the car in Chill"
+    },
+    {
+      "id": 33,
+      "name": "Climate System On/Off",
+      "category": "Climate Control",
+      "notes": "Turn On/Off the entire Climate system"
+    },
+    {
+      "id": 34,
+      "name": "Continuous Autopilot",
+      "category": "Automations",
+      "notes": "Use double press/pull as activation method of your Autopilot(excluding Juniper). A Gen2 Commander required for Model S/X"
+    },
+    {
+      "id": 36,
+      "name": "Creep",
+      "category": "Stopping Mode",
+      "notes": null
+    },
+    {
+      "id": 37,
+      "name": "Cruise Control",
+      "category": "Autopilot",
+      "notes": "Toggle between On/Off"
+    },
+    {
+      "id": 38,
+      "name": "Custom Submenu",
+      "category": "Others",
+      "notes": "Toggle between On/Off"
+    },
+    {
+      "id": 39,
+      "name": "Defog/Defrost",
+      "category": "Climate Control",
+      "notes": "Press once to defog and second time for defrost. The state is not visualized on the Tesla display"
+    },
+    {
+      "id": 40,
+      "name": "Dim Mirrors",
+      "category": "Mirrors",
+      "notes": "Only works when it's dark outside. Toggle between Off or Auto"
+    },
+    {
+      "id": 41,
+      "name": "Disable Front Motor",
+      "category": "Traction Control",
+      "notes": "Can be activated/deactivated only in Park. Not recommended for long/high speed drives."
+    },
+    {
+      "id": 42,
+      "name": "Disable Rear Motor",
+      "category": "Traction Control",
+      "notes": "Can be activated/deactivated only in Park. Not recommended for long/high speed drives."
+    },
+    {
+      "id": 43,
+      "name": "Dog Mode",
+      "category": "Climate Control",
+      "notes": "Pairing with the vehicle is required"
+    },
+    {
+      "id": 44,
+      "name": "DOWN (-25%)",
+      "category": "Regen Braking",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 45,
+      "name": "Drift Mode",
+      "category": "Traction Control",
+      "notes": "Can be activated/deactivated only in Park. Disables the car ESP. Use with caution!"
+    },
+    {
+      "id": 46,
+      "name": "Drift Mode PRO",
+      "category": "Traction Control",
+      "notes": "Can be activated/deactivated only in Park. Disables the front motor and ESP. Use with caution!"
+    },
+    {
+      "id": 47,
+      "name": "Fan speed -",
+      "category": "Climate Control",
+      "notes": "The state change is not visualized on the Tesla screen."
+    },
+    {
+      "id": 49,
+      "name": "Fan speed -3",
+      "category": "Climate Control",
+      "notes": "The state change is not visualized on the Tesla screen."
+    },
+    {
+      "id": 48,
+      "name": "Fan speed +",
+      "category": "Climate Control",
+      "notes": "The state change is not visualized on the Tesla screen."
+    },
+    {
+      "id": 50,
+      "name": "Fan speed +3",
+      "category": "Climate Control",
+      "notes": "The state change is not visualized on the Tesla screen."
+    },
+    {
+      "id": 51,
+      "name": "Fan speed MAX",
+      "category": "Climate Control",
+      "notes": "The state change is not visualized on the Tesla screen."
+    },
+    {
+      "id": 52,
+      "name": "Fan speed MIN",
+      "category": "Climate Control",
+      "notes": "The state change is not visualized on the Tesla screen"
+    },
+    {
+      "id": 53,
+      "name": "Fold mirrors",
+      "category": "Mirrors",
+      "notes": null
+    },
+    {
+      "id": 54,
+      "name": "Force Manual High Beam",
+      "category": "Automations",
+      "notes": "Lets you turn Off your High Beam when on AP"
+    },
+    {
+      "id": 55,
+      "name": "Force Manual Wipers",
+      "category": "Automations",
+      "notes": "Ensure the wipers maintain their initial state while in Autopilot"
+    },
+    {
+      "id": 56,
+      "name": "Franks Mode",
+      "category": "Dashboard",
+      "notes": "Displays larger turn signal indicators for better visibility"
+    },
+    {
+      "id": 35,
+      "name": "Front Camera View",
+      "category": "Accessibility",
+      "notes": null
+    },
+    {
+      "id": 57,
+      "name": "Front Fog Lights",
+      "category": "Headlights",
+      "notes": "[Beta] If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 59,
+      "name": "Front Left Seat Heating/ Cooling",
+      "category": "Climate Control",
+      "notes": "Turn the knob Right for heating and Left for cooling"
+    },
+    {
+      "id": 58,
+      "name": "Front Left/Right Door",
+      "category": "Open",
+      "notes": "[Beta] If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 60,
+      "name": "Front Right Seat Heating/ Cooling ",
+      "category": "Climate Control",
+      "notes": "Turn the knob Right for heating and Left for cooling"
+    },
+    {
+      "id": 61,
+      "name": "Frunk",
+      "category": "Open",
+      "notes": "Turn the knob Right for heating and Left for cooling"
+    },
+    {
+      "id": 62,
+      "name": "Glovebox",
+      "category": "Open",
+      "notes": "If you have PIN enabled, this action will override it."
+    },
+    {
+      "id": 63,
+      "name": "Half Press Door Handle",
+      "category": "Automations",
+      "notes": "Unlock Chargeport or Open Frunk with Doorhandle [model 3/Y before 06.2022]"
+    },
+    {
+      "id": 64,
+      "name": "Hazard Lights",
+      "category": "Accessibility",
+      "notes": "Unlock Chargeport or Open Frunk with Doorhandle [model 3/Y before 06.2022]"
+    },
+    {
+      "id": 65,
+      "name": "High",
+      "category": "Suspension",
+      "notes": "Unlock Chargeport or Open Frunk with Doorhandle [model 3/Y before 06.2022]"
+    },
+    {
+      "id": 66,
+      "name": "High Beam",
+      "category": "Headlights",
+      "notes": "Only works when Headlights setting is set to Low Beam or Auto"
+    },
+    {
+      "id": 67,
+      "name": "High Beam Flash",
+      "category": "Headlights",
+      "notes": "Only works when Headlights setting is set to Low Beam or Auto"
+    },
+    {
+      "id": 68,
+      "name": "High Beam Strobe",
+      "category": "Headlights",
+      "notes": "Continuously blink high beams between 2 and 10 times"
+    },
+    {
+      "id": 69,
+      "name": "High Beam YOKE",
+      "category": "Headlights",
+      "notes": "Continuously blink high beams between 2 and 10 times"
+    },
+    {
+      "id": 70,
+      "name": "Hold",
+      "category": "Stopping Mode",
+      "notes": "Continuously blink high beams between 2 and 10 times"
+    },
+    {
+      "id": 71,
+      "name": "Increase Cruising Speed",
+      "category": "Autopilot",
+      "notes": "Continuously blink high beams between 2 and 10 times"
+    },
+    {
+      "id": 72,
+      "name": "Insane",
+      "category": "Acceleration",
+      "notes": "Each press will set the car in Insane mode"
+    },
+    {
+      "id": 73,
+      "name": "Interior Lights",
+      "category": "Others",
+      "notes": "[Beta] May cause light flickering on some vehicles."
+    },
+    {
+      "id": 74,
+      "name": "Keep Climate On",
+      "category": "Climate Control",
+      "notes": "Pairing with the vehicle is required"
+    },
+    {
+      "id": 75,
+      "name": "Kickdown",
+      "category": "Automations",
+      "notes": "Switch from Chill to Standard, Sport, Insane, or Plaid by pressing the pedal beyond a certain threshold"
+    },
+    {
+      "id": 78,
+      "name": "Left / Right",
+      "category": "Screen Tilt",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 76,
+      "name": "Left Air Vent Off",
+      "category": "Climate Control",
+      "notes": null
+    },
+    {
+      "id": 77,
+      "name": "Left Air Vent Toggle",
+      "category": "Climate Control",
+      "notes": "Toggle between On and Off"
+    },
+    {
+      "id": 79,
+      "name": "Left Seat Profile",
+      "category": "Seat Adjustment",
+      "notes": "Creates up to 4 profiles for your front left seat"
+    },
+    {
+      "id": 80,
+      "name": "Left Seat Submenu",
+      "category": "Seat Adjustment",
+      "notes": "Creates up to 4 profiles for your front left seat"
+    },
+    {
+      "id": 81,
+      "name": "Left Turn Signal",
+      "category": "Accessibility",
+      "notes": "Creates up to 4 profiles for your front left seat"
+    },
+    {
+      "id": 82,
+      "name": "Left Turn YOKE Signal",
+      "category": "Accessibility",
+      "notes": "Creates up to 4 profiles for your front left seat"
+    },
+    {
+      "id": 83,
+      "name": "Light Strip Brightness",
+      "category": "Others",
+      "notes": "Adjusts the LED strip native brightness in 25% increments"
+    },
+    {
+      "id": 84,
+      "name": "Lock",
+      "category": "Lock / Unlock",
+      "notes": "Adjusts the LED strip native brightness in 25% increments"
+    },
+    {
+      "id": 85,
+      "name": "Long Honk",
+      "category": "Accessibility",
+      "notes": "Adjusts the LED strip native brightness in 25% increments"
+    },
+    {
+      "id": 86,
+      "name": "Long Pull Door Handle",
+      "category": "Automations",
+      "notes": "Unlock Charge port or Open Frunk with your Front or Rear Door handles"
+    },
+    {
+      "id": 87,
+      "name": "LOOP DOWN (-25%)",
+      "category": "Regen Braking",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 88,
+      "name": "LOOP UP (+25%)",
+      "category": "Regen Braking",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 89,
+      "name": "Low",
+      "category": "Suspension",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 90,
+      "name": "Low Beam",
+      "category": "Headlights",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 91,
+      "name": "Media Submenu",
+      "category": "Media",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 92,
+      "name": "Medium",
+      "category": "Suspension",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 93,
+      "name": "Mute Speed Limit Warning",
+      "category": "Automations",
+      "notes": "Will disable the speed limit chime for newer models. Requires Gen 2 and Front Installation"
+    },
+    {
+      "id": 94,
+      "name": "Next Song",
+      "category": "Media",
+      "notes": "Will disable the speed limit chime for newer models. Requires Gen 2 and Front Installation"
+    },
+    {
+      "id": 20,
+      "name": "Off-Road",
+      "category": "Traction Control",
+      "notes": "Works only on AWD models"
+    },
+    {
+      "id": 95,
+      "name": "On / Off Front Left",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 165,
+      "name": "On / Off Front Left",
+      "category": "Seat Cooling",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 100,
+      "name": "On / Off Front Right",
+      "category": "Seat Cooling",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 99,
+      "name": "On / Off Rear Left",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 101,
+      "name": "Park Brake",
+      "category": "Others",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 102,
+      "name": "Park if Unbuckled",
+      "category": "Automations",
+      "notes": "Automatically will put your car in P when your seatbelt is unbuckled"
+    },
+    {
+      "id": 103,
+      "name": "Plaid",
+      "category": "Acceleration",
+      "notes": "Each press will set the car in Plaid on Model S/X"
+    },
+    {
+      "id": 104,
+      "name": "Play / Pause / Mute",
+      "category": "Media",
+      "notes": "Each press will set the car in Plaid on Model S/X"
+    },
+    {
+      "id": 105,
+      "name": "Previous Song",
+      "category": "Media",
+      "notes": "Each press will set the car in Plaid on Model S/X"
+    },
+    {
+      "id": 106,
+      "name": "Rear FAN toggle",
+      "category": "Climate Control",
+      "notes": "The state change is not visualized on the Tesla screen"
+    },
+    {
+      "id": 107,
+      "name": "Rear Fog Lights",
+      "category": "Headlights",
+      "notes": "[Beta] If the car comes equipped with this feature from the factory. Might cause light flickering on some cars"
+    },
+    {
+      "id": 108,
+      "name": "Rear Left/Right Door",
+      "category": "Open",
+      "notes": "[Beta] If the car comes equipped with this feature from the factory. Might cause light flickering on some cars"
+    },
+    {
+      "id": 109,
+      "name": "Rear View Camera",
+      "category": "Accessibility",
+      "notes": null
+    },
+    {
+      "id": 110,
+      "name": "Rear Window Defroster",
+      "category": "Climate Control",
+      "notes": "Currently not available"
+    },
+    {
+      "id": 111,
+      "name": "Recirculation Off",
+      "category": "Climate Control",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 112,
+      "name": "Recirculation On",
+      "category": "Climate Control",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 113,
+      "name": "Recirculation Toggle",
+      "category": "Climate Control",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 114,
+      "name": "Regen Control",
+      "category": "Regen Braking",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 115,
+      "name": "Return to AUTO",
+      "category": "Wipers",
+      "notes": "To see the change in state your HVAC should be set to Auto"
+    },
+    {
+      "id": 116,
+      "name": "Right Air Vent Off",
+      "category": "Climate Control",
+      "notes": null
+    },
+    {
+      "id": 117,
+      "name": "Right Air Vent toggle",
+      "category": "Climate Control",
+      "notes": "Toggle between On and Off"
+    },
+    {
+      "id": 118,
+      "name": "Right Seat Profile",
+      "category": "Seat Adjustment",
+      "notes": "Creates up to 4 profiles for your front right seat"
+    },
+    {
+      "id": 119,
+      "name": "Right Seat Submenu",
+      "category": "Seat Adjustment",
+      "notes": "Creates up to 4 profiles for your front right seat"
+    },
+    {
+      "id": 120,
+      "name": "Right Turn Signal",
+      "category": "Accessibility",
+      "notes": "Creates up to 4 profiles for your front right seat"
+    },
+    {
+      "id": 121,
+      "name": "Right Turn YOKE Signal",
+      "category": "Accessibility",
+      "notes": "Creates up to 4 profiles for your front right seat"
+    },
+    {
+      "id": 122,
+      "name": "Roll",
+      "category": "Stopping Mode",
+      "notes": "Creates up to 4 profiles for your front right seat"
+    },
+    {
+      "id": 123,
+      "name": "Safe Bluetooth Connect",
+      "category": "Automations",
+      "notes": "When enabled, the commander will not be visible via Bluetooth or Wi-Fi for new connections when the car is empty"
+    },
+    {
+      "id": 124,
+      "name": "Scan My Tesla Support",
+      "category": "Automations",
+      "notes": "When enabled, the commander will not be visible via Bluetooth or Wi-Fi for new connections when the car is empty"
+    },
+    {
+      "id": 125,
+      "name": "Seat",
+      "category": "Seat Adjustment",
+      "notes": "Move Driver or Passenger seat backwards and forwards. Only Passenger on Model X"
+    },
+    {
+      "id": 126,
+      "name": "Self-Presenting Doors",
+      "category": "Automations",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 127,
+      "name": "Self-Presenting Trunk",
+      "category": "Automations",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 128,
+      "name": "Set OFF",
+      "category": "Wipers",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 129,
+      "name": "Set to 2",
+      "category": "Wipers",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 130,
+      "name": "Set to 3",
+      "category": "Wipers",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 131,
+      "name": "Set to 4",
+      "category": "Wipers",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 132,
+      "name": "Shift to D",
+      "category": "Gear Shift",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 133,
+      "name": "Shift to N",
+      "category": "Gear Shift",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 134,
+      "name": "Shift to P",
+      "category": "Gear Shift",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 135,
+      "name": "Shift to R",
+      "category": "Gear Shift",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 136,
+      "name": "Short Honk",
+      "category": "Accessibility",
+      "notes": "Car needs to be locked but awake."
+    },
+    {
+      "id": 137,
+      "name": "Short Left Turn Signal",
+      "category": "Accessibility",
+      "notes": null
+    },
+    {
+      "id": 138,
+      "name": "Short Right Turn Signal",
+      "category": "Accessibility",
+      "notes": null
+    },
+    {
+      "id": 179,
+      "name": "Single Wipe",
+      "category": "Wipers",
+      "notes": "Open/Close all 4 windows a few inches/cm. Works only in \"Park\". Pairing with the vehicle is required"
+    },
+    {
+      "id": 139,
+      "name": "Slip Start",
+      "category": "Traction Control",
+      "notes": null
+    },
+    {
+      "id": 140,
+      "name": "Speed Limit Signs",
+      "category": "Dashboard",
+      "notes": "Requires Gen 2 and Front Installation. Displays speed limit signs on the left side of the Dashboard"
+    },
+    {
+      "id": 141,
+      "name": "Sport",
+      "category": "Acceleration",
+      "notes": "Each press will set the car in Sport/Standard. State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 142,
+      "name": "Standard Decrease -1",
+      "category": "Wipers",
+      "notes": "Each press will set the car in Sport/Standard. State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 143,
+      "name": "Standard Increase +1",
+      "category": "Wipers",
+      "notes": "Each press will set the car in Sport/Standard. State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 144,
+      "name": "Standard Loop +1 / -1",
+      "category": "Wipers",
+      "notes": "Each press will set the car in Sport/Standard. State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 145,
+      "name": "Steering Wheel Heater",
+      "category": "Climate Control",
+      "notes": "If equipped. The state change is not visualised on the Tesla screen"
+    },
+    {
+      "id": 146,
+      "name": "Thank you!",
+      "category": "Others",
+      "notes": "Select to flash the hazard lights 1, 2, or 3 times."
+    },
+    {
+      "id": 147,
+      "name": "Tilt mirrors",
+      "category": "Mirrors",
+      "notes": "Toggle between Auto and Off. Works only in \"Reverse\""
+    },
+    {
+      "id": 148,
+      "name": "Toggle",
+      "category": "Acceleration",
+      "notes": "State change is not visualized on Tesla's display."
+    },
+    {
+      "id": 149,
+      "name": "Toggle",
+      "category": "Traction Control",
+      "notes": "Toggle between Off-Road, Slip Star and Normal mode"
+    },
+    {
+      "id": 151,
+      "name": "Toggle",
+      "category": "Lock / Unlock",
+      "notes": "Toggle between Off-Road, Slip Star and Normal mode"
+    },
+    {
+      "id": 150,
+      "name": "Toggle 1",
+      "category": "Wipers",
+      "notes": "Toggle between Off-Road, Slip Star and Normal mode"
+    },
+    {
+      "id": 152,
+      "name": "Toggle 2",
+      "category": "Wipers",
+      "notes": "Toggle between Off-Road, Slip Star and Normal mode"
+    },
+    {
+      "id": 153,
+      "name": "Toggle 3",
+      "category": "Wipers",
+      "notes": "Toggle between Off-Road, Slip Star and Normal mode"
+    },
+    {
+      "id": 154,
+      "name": "Toggle 4",
+      "category": "Wipers",
+      "notes": "Toggle between Off-Road, Slip Star and Normal mode"
+    },
+    {
+      "id": 155,
+      "name": "Toggle All Rear",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 17,
+      "name": "Toggle Autopilot",
+      "category": "Autopilot",
+      "notes": "Toggle between On/Off"
+    },
+    {
+      "id": 156,
+      "name": "Toggle D-R",
+      "category": "Gear Shift",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 157,
+      "name": "Toggle Front Left",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 158,
+      "name": "Toggle Front Left",
+      "category": "Seat Cooling",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 159,
+      "name": "Toggle Front Right",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 96,
+      "name": "Toggle Front Right",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 160,
+      "name": "Toggle Front Right",
+      "category": "Seat Cooling",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 161,
+      "name": "Toggle OFF",
+      "category": "Wipers",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 162,
+      "name": "Toggle P-D",
+      "category": "Gear Shift",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 163,
+      "name": "Toggle P-R",
+      "category": "Gear Shift",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 164,
+      "name": "Toggle Rear Center",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 97,
+      "name": "Toggle Rear Center",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 98,
+      "name": "Toggle Rear Left",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 166,
+      "name": "Toggle Rear Right",
+      "category": "Heated Seats",
+      "notes": "If the car comes equipped with this feature from the factory"
+    },
+    {
+      "id": 167,
+      "name": "Track Mode",
+      "category": "Others",
+      "notes": "For Performance and Plaid models"
+    },
+    {
+      "id": 168,
+      "name": "Trunk",
+      "category": "Open",
+      "notes": "For Performance and Plaid models"
+    },
+    {
+      "id": 169,
+      "name": "Unlock",
+      "category": "Lock / Unlock",
+      "notes": "For Performance and Plaid models"
+    },
+    {
+      "id": 170,
+      "name": "UP (+25%)",
+      "category": "Regen Braking",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 171,
+      "name": "Very High",
+      "category": "Suspension",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 172,
+      "name": "Very Low",
+      "category": "Suspension",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 173,
+      "name": "Very Short Honk",
+      "category": "Accessibility",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 174,
+      "name": "Voice Command",
+      "category": "Accessibility",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 175,
+      "name": "Volume Down",
+      "category": "Media",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 176,
+      "name": "Volume Up",
+      "category": "Media",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 177,
+      "name": "Washers",
+      "category": "Wipers",
+      "notes": "State change is not visualized on Tesla's display"
+    },
+    {
+      "id": 178,
+      "name": "Windows Vent",
+      "category": "Climate Control",
+      "notes": "Open/Close all 4 windows a few inches/cm. Works only in \"Park\". Pairing with the vehicle is required"
+    }
+  ]
+}

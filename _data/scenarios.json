@@ -1,0 +1,1867 @@
+{
+  "scenarios": [
+    {
+      "id": "quick-climate",
+      "name": "Quick Climate Control",
+      "description": "Fast climate control for different situations - warm up, cool down, or defrost",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "climate",
+        "comfort",
+        "quick"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Climate On/Off Toggle",
+          "description": "Quick toggle climate control",
+          "steps": [
+            {
+              "feature": "Keep Climate On"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Max Cooling",
+          "description": "Set fan to max for quick cooling",
+          "steps": [
+            {
+              "feature": "Keep Climate On"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Fan speed MAX"
+            },
+            {
+              "delay": 2
+            },
+            {
+              "feature": "Front Left Seat Heating/ Cooling",
+              "note": "Turn knob left for cooling"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Defrost Mode",
+          "description": "Turn on defrosters and max fan",
+          "steps": [
+            {
+              "feature": "Keep Climate On"
+            },
+            {
+              "feature": "Defog/Defrost"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Fan speed +3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "parking-helper",
+      "name": "Parking Assistant",
+      "description": "Helps with parking maneuvers - open doors, adjust mirrors, activate cameras",
+      "author": "f",
+      "supportedModels": [
+        "model s",
+        "model 3",
+        "model x",
+        "model y"
+      ],
+      "tags": [
+        "parking",
+        "convenience",
+        "safety"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Quick Park",
+          "description": "Basic parking setup",
+          "steps": [
+            {
+              "feature": "Fold mirrors"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Tight Space Entry",
+          "description": "Prepare for tight parking spaces",
+          "steps": [
+            {
+              "feature": "Fold mirrors"
+            },
+            {
+              "feature": "Chill",
+              "note": "Slower acceleration for careful maneuvering"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Exit Vehicle",
+          "description": "Prepare to leave the vehicle",
+          "steps": [
+            {
+              "feature": "Lock"
+            },
+            {
+              "feature": "Fold mirrors"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "performance-mode",
+      "name": "Performance Toggle",
+      "description": "Quick switching between driving modes for different situations",
+      "author": "f",
+      "supportedModels": [
+        "model s",
+        "model 3",
+        "model x",
+        "model y"
+      ],
+      "tags": [
+        "performance",
+        "driving",
+        "speed"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Chill Mode",
+          "description": "Activate chill acceleration",
+          "steps": [
+            {
+              "feature": "Chill"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Sport Mode",
+          "description": "Activate sport acceleration",
+          "steps": [
+            {
+              "feature": "Sport"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Max Performance",
+          "description": "Maximum acceleration with high regen",
+          "steps": [
+            {
+              "feature": "Sport"
+            },
+            {
+              "feature": "100%",
+              "note": "Max regen braking"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "regen-control",
+      "name": "Regen Braking Control",
+      "description": "Quick regen braking adjustments for different driving conditions",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "efficiency",
+        "driving",
+        "regen"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Low Regen",
+          "description": "Set regen to 25% for snow/ice",
+          "steps": [
+            {
+              "feature": "25%"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Standard Regen",
+          "description": "Set regen to 75% for normal driving",
+          "steps": [
+            {
+              "feature": "75%"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Max Regen",
+          "description": "Set regen to 100% for maximum efficiency",
+          "steps": [
+            {
+              "feature": "100%"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "media-control",
+      "name": "Media Quick Controls",
+      "description": "Control your music and media playback easily",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "media",
+        "entertainment",
+        "music"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Play/Pause",
+          "description": "Toggle media playback",
+          "steps": [
+            {
+              "feature": "Play / Pause / Mute"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Next Track",
+          "description": "Skip to next song",
+          "steps": [
+            {
+              "feature": "Next Song"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Volume Down",
+          "description": "Lower the volume",
+          "steps": [
+            {
+              "feature": "Volume Down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "safety-mode",
+      "name": "Safety & Security",
+      "description": "Quick access to safety features for different situations",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "safety",
+        "security",
+        "emergency"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Quick Lock",
+          "description": "Lock all doors",
+          "steps": [
+            {
+              "feature": "Lock"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Emergency Unlock",
+          "description": "Unlock all doors quickly",
+          "steps": [
+            {
+              "feature": "Unlock"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Flash & Honk",
+          "description": "Flash lights and honk horn for attention",
+          "steps": [
+            {
+              "feature": "Hazard Lights"
+            },
+            {
+              "feature": "Short Honk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pet-mode",
+      "name": "Pet Comfort Mode",
+      "description": "Keep your pets comfortable while you're away from the car",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "pets",
+        "comfort",
+        "safety"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Dog Mode",
+          "description": "Activate Dog Mode",
+          "steps": [
+            {
+              "feature": "Dog Mode"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Dog Mode + Lock",
+          "description": "Dog Mode with doors locked",
+          "steps": [
+            {
+              "feature": "Dog Mode"
+            },
+            {
+              "feature": "Lock"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Camp Mode",
+          "description": "Switch to Camp Mode for longer stays",
+          "steps": [
+            {
+              "feature": "Camp Mode"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "seat-comfort",
+      "name": "Seat Comfort Control",
+      "description": "Quick seat heating adjustments for driver comfort",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "comfort",
+        "seats",
+        "heating"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Driver Seat Heat Low",
+          "description": "Set driver seat to low heat",
+          "steps": [
+            {
+              "feature": "Front Left Seat Heating/ Cooling",
+              "note": "One click for low heat"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "All Seats Heat",
+          "description": "Turn on all heated seats",
+          "steps": [
+            {
+              "feature": "All Heaters Off",
+              "note": "Reset first"
+            },
+            {
+              "feature": "Front Left Seat Heating/ Cooling"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Seats Off",
+          "description": "Turn off all seat heaters",
+          "steps": [
+            {
+              "feature": "All Heaters Off"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "access-control",
+      "name": "Quick Access Control",
+      "description": "Control vehicle access points - doors, trunk, frunk",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "access",
+        "doors",
+        "convenience"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Open Trunk",
+          "description": "Open the rear trunk",
+          "steps": [
+            {
+              "feature": "Trunk"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Open Frunk",
+          "description": "Open the front trunk",
+          "steps": [
+            {
+              "feature": "Frunk"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Open Glovebox",
+          "description": "Open the glovebox",
+          "steps": [
+            {
+              "feature": "Glovebox"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "automation-helper",
+      "name": "Autopilot Assistant",
+      "description": "Help with autopilot features and automation",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "autopilot",
+        "automation",
+        "driving"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Speed Warning Mute",
+          "description": "Mute speed limit warnings",
+          "steps": [
+            {
+              "feature": "Mute Speed Limit Warning"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Continuous Autopilot",
+          "description": "Enable continuous autopilot",
+          "steps": [
+            {
+              "feature": "Continuous Autopilot"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Force Manual Control",
+          "description": "Force manual wiper control",
+          "steps": [
+            {
+              "feature": "Force Manual Wipers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "winter-driving",
+      "name": "Winter Driving Mode",
+      "description": "Optimized settings for safe winter driving with proper traction and visibility",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "winter",
+        "safety",
+        "traction",
+        "visibility"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Snow Mode Setup",
+          "description": "Reduce regen and enable slip start for better traction",
+          "steps": [
+            {
+              "feature": "25%",
+              "note": "Low regen for icy conditions"
+            },
+            {
+              "feature": "Slip Start"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Comfort Winter",
+          "description": "Warm up cabin and seats for comfort",
+          "steps": [
+            {
+              "feature": "Keep Climate On"
+            },
+            {
+              "feature": "Steering Wheel Heater"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Front Left Seat Heating/ Cooling",
+              "note": "Turn knob right for heating"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Winter Emergency",
+          "description": "Maximum visibility and heating for emergency situations",
+          "steps": [
+            {
+              "feature": "Defog/Defrost"
+            },
+            {
+              "feature": "High Beam"
+            },
+            {
+              "feature": "Hazard Lights"
+            },
+            {
+              "feature": "Fan speed MAX"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "night-driving",
+      "name": "Night Driving Assistant",
+      "description": "Enhanced visibility and safety features for night driving",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "night",
+        "visibility",
+        "safety",
+        "headlights"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Auto Night Setup",
+          "description": "Enable automatic night driving features",
+          "steps": [
+            {
+              "feature": "Dim Mirrors"
+            },
+            {
+              "feature": "Speed Limit Signs"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Enhanced Visibility",
+          "description": "Manual override for maximum visibility",
+          "steps": [
+            {
+              "feature": "High Beam"
+            },
+            {
+              "feature": "Front Fog Lights"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Interior Lights"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Emergency Flash",
+          "description": "Flash high beams to signal other drivers",
+          "steps": [
+            {
+              "feature": "High Beam Strobe"
+            },
+            {
+              "feature": "Short Honk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "valet-mode",
+      "name": "Valet Mode Setup",
+      "description": "Prepare the car for valet service with safety restrictions",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "valet",
+        "security",
+        "restrictions",
+        "safety"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Valet Prep",
+          "description": "Basic valet preparation",
+          "steps": [
+            {
+              "feature": "Chill"
+            },
+            {
+              "feature": "Glovebox"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Secure Mode",
+          "description": "Enhanced security for valet",
+          "steps": [
+            {
+              "feature": "Lock"
+            },
+            {
+              "feature": "25%",
+              "note": "Gentle regen for valet"
+            },
+            {
+              "feature": "Mute Speed Limit Warning"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Pickup Ready",
+          "description": "Prepare for vehicle pickup",
+          "steps": [
+            {
+              "feature": "Unlock"
+            },
+            {
+              "feature": "Interior Lights"
+            },
+            {
+              "feature": "Short Honk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "road-trip-comfort",
+      "name": "Road Trip Comfort",
+      "description": "Optimize comfort settings for long highway drives",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "comfort",
+        "highway",
+        "long-distance",
+        "cruise"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Cruise Comfort",
+          "description": "Set up for comfortable highway cruising",
+          "steps": [
+            {
+              "feature": "75%",
+              "note": "Balanced regen for highway"
+            },
+            {
+              "feature": "Keep Climate On"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Full Comfort",
+          "description": "Maximum comfort for long drives",
+          "steps": [
+            {
+              "feature": "Front Left Seat Heating/ Cooling"
+            },
+            {
+              "feature": "Steering Wheel Heater"
+            },
+            {
+              "delay": 2
+            },
+            {
+              "feature": "Volume Up"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Rest Stop",
+          "description": "Prepare for rest stop",
+          "steps": [
+            {
+              "feature": "Shift to P"
+            },
+            {
+              "feature": "All Heaters Off"
+            },
+            {
+              "feature": "Play / Pause / Mute"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-autopilot",
+      "name": "Highway Autopilot Pro",
+      "description": "Advanced autopilot setup for highway driving",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "autopilot",
+        "highway",
+        "automation",
+        "cruise"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Basic Autopilot",
+          "description": "Enable basic autopilot features",
+          "steps": [
+            {
+              "feature": "Toggle Autopilot"
+            },
+            {
+              "feature": "Cruise Control"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Full Auto Mode",
+          "description": "Enable all autopilot assistance",
+          "steps": [
+            {
+              "feature": "Continuous Autopilot"
+            },
+            {
+              "feature": "Autopilot MAX"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Force Manual Wipers"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Manual Override",
+          "description": "Take manual control",
+          "steps": [
+            {
+              "feature": "Toggle Autopilot"
+            },
+            {
+              "feature": "Autopilot Hands-on"
+            },
+            {
+              "feature": "Short Honk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "city-parking",
+      "name": "City Parking Pro",
+      "description": "Advanced parking assistance for tight city spaces",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "parking",
+        "city",
+        "cameras",
+        "assistance"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Parking Setup",
+          "description": "Basic parking assistance",
+          "steps": [
+            {
+              "feature": "Rear View Camera"
+            },
+            {
+              "feature": "Fold mirrors"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Tight Space Mode",
+          "description": "Enhanced assistance for tight spaces",
+          "steps": [
+            {
+              "feature": "Front Camera View"
+            },
+            {
+              "feature": "Chill"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "25%",
+              "note": "Gentle regen for precise control"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "360° Awareness",
+          "description": "Maximum visibility for complex parking",
+          "steps": [
+            {
+              "feature": "Blind Spot"
+            },
+            {
+              "feature": "Interior Lights"
+            },
+            {
+              "feature": "Very Short Honk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "performance-track",
+      "name": "Track Day Setup",
+      "description": "Performance configuration for track driving and spirited driving",
+      "author": "f",
+      "supportedModels": [
+        "model s",
+        "model x",
+        "model 3"
+      ],
+      "tags": [
+        "performance",
+        "track",
+        "sport",
+        "racing"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Sport Setup",
+          "description": "Basic performance mode",
+          "steps": [
+            {
+              "feature": "Sport"
+            },
+            {
+              "feature": "100%",
+              "note": "Max regen for track"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Track Mode",
+          "description": "Full track configuration",
+          "steps": [
+            {
+              "feature": "Track Mode"
+            },
+            {
+              "feature": "Plaid"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Low",
+              "note": "Lower suspension for track"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Cool Down",
+          "description": "Post-session cool down",
+          "steps": [
+            {
+              "feature": "Chill"
+            },
+            {
+              "feature": "All Heaters Off"
+            },
+            {
+              "feature": "Fan speed MAX"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "emergency-response",
+      "name": "Emergency Response",
+      "description": "Quick emergency response and signaling system",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "emergency",
+        "safety",
+        "signaling",
+        "assistance"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Emergency Alert",
+          "description": "Basic emergency signaling",
+          "steps": [
+            {
+              "feature": "Hazard Lights"
+            },
+            {
+              "feature": "Long Honk"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Visibility Mode",
+          "description": "Maximum visibility for emergency",
+          "steps": [
+            {
+              "feature": "High Beam Strobe"
+            },
+            {
+              "feature": "Interior Lights"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Unlock"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "SOS Signal",
+          "description": "Continuous emergency signaling",
+          "steps": [
+            {
+              "feature": "Thank you!",
+              "note": "Flash hazards 3 times"
+            },
+            {
+              "feature": "High Beam Flash"
+            },
+            {
+              "feature": "Short Honk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "car-wash-mode",
+      "name": "Car Wash Preparation",
+      "description": "Prepare vehicle for automatic car wash",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "car-wash",
+        "preparation",
+        "sensors",
+        "protection"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Basic Wash Prep",
+          "description": "Basic car wash preparation",
+          "steps": [
+            {
+              "feature": "Set OFF",
+              "note": "Turn off wipers"
+            },
+            {
+              "feature": "Fold mirrors"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Full Wash Mode",
+          "description": "Complete car wash setup",
+          "steps": [
+            {
+              "feature": "Shift to N"
+            },
+            {
+              "feature": "Lock"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Climate System On/Off",
+              "note": "Turn off to prevent soap intake"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Post-Wash Setup",
+          "description": "Restore normal settings after wash",
+          "steps": [
+            {
+              "feature": "Return to AUTO",
+              "note": "Restore auto wipers"
+            },
+            {
+              "feature": "Unlock"
+            },
+            {
+              "feature": "Keep Climate On"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "loading-assistant",
+      "name": "Loading & Unloading Assistant",
+      "description": "Help with loading and unloading cargo and passengers",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "loading",
+        "cargo",
+        "convenience",
+        "access"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Rear Access",
+          "description": "Open rear for loading",
+          "steps": [
+            {
+              "feature": "Trunk"
+            },
+            {
+              "feature": "Interior Lights"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Full Access",
+          "description": "Open all compartments for loading",
+          "steps": [
+            {
+              "feature": "Frunk"
+            },
+            {
+              "delay": 2
+            },
+            {
+              "feature": "Trunk"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Glovebox"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Secure & Go",
+          "description": "Close everything and prepare to leave",
+          "steps": [
+            {
+              "feature": "Lock"
+            },
+            {
+              "feature": "Fold mirrors"
+            },
+            {
+              "feature": "Short Honk",
+              "note": "Confirmation beep"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "storm-weather",
+      "name": "Storm Weather Mode",
+      "description": "Enhanced safety and visibility for driving in storms and heavy rain",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "storm",
+        "rain",
+        "weather",
+        "visibility",
+        "safety"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Rain Setup",
+          "description": "Basic rain driving configuration",
+          "steps": [
+            {
+              "feature": "Single Wipe"
+            },
+            {
+              "feature": "Defog/Defrost"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Storm Mode",
+          "description": "Full storm safety configuration",
+          "steps": [
+            {
+              "feature": "Standard Increase +1",
+              "note": "Increase wiper speed"
+            },
+            {
+              "feature": "Rear Window Defroster"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Hazard Lights"
+            },
+            {
+              "feature": "25%",
+              "note": "Gentle regen for wet roads"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Severe Weather",
+          "description": "Maximum visibility and safety",
+          "steps": [
+            {
+              "feature": "Set to 4",
+              "note": "Max wiper speed"
+            },
+            {
+              "feature": "High Beam"
+            },
+            {
+              "feature": "Fan speed MAX"
+            },
+            {
+              "feature": "Chill",
+              "note": "Gentle acceleration for safety"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "family-transport",
+      "name": "Family Transport Mode",
+      "description": "Perfect settings for family trips with kids and comfort priorities",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "family",
+        "kids",
+        "comfort",
+        "safety",
+        "quiet"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Kid-Friendly Drive",
+          "description": "Smooth and quiet driving for children",
+          "steps": [
+            {
+              "feature": "Chill"
+            },
+            {
+              "feature": "50%",
+              "note": "Moderate regen for smooth ride"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Family Comfort",
+          "description": "Optimize temperature for everyone",
+          "steps": [
+            {
+              "feature": "Keep Climate On"
+            },
+            {
+              "feature": "Rear FAN toggle"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Toggle All Rear",
+              "note": "Rear seat heating if needed"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Child Safety Lock",
+          "description": "Secure vehicle for child safety",
+          "steps": [
+            {
+              "feature": "Child Unlock Both"
+            },
+            {
+              "feature": "Lock"
+            },
+            {
+              "feature": "Volume Down",
+              "note": "Quieter environment"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "business-professional",
+      "name": "Business Professional",
+      "description": "Professional settings for business meetings and client transport",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "business",
+        "professional",
+        "quiet",
+        "comfort",
+        "presentation"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Quiet Professional",
+          "description": "Minimal noise for phone calls",
+          "steps": [
+            {
+              "feature": "Play / Pause / Mute"
+            },
+            {
+              "feature": "Fan speed MIN"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Client Comfort",
+          "description": "Optimal comfort for passengers",
+          "steps": [
+            {
+              "feature": "Front Right Seat Heating/ Cooling "
+            },
+            {
+              "feature": "Keep Climate On"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Interior Lights"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Meeting Arrival",
+          "description": "Professional arrival setup",
+          "steps": [
+            {
+              "feature": "Shift to P"
+            },
+            {
+              "feature": "Fold mirrors"
+            },
+            {
+              "feature": "All Heaters Off"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "outdoor-adventure",
+      "name": "Outdoor Adventure",
+      "description": "Settings for camping, hiking, and outdoor activities",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "camping",
+        "outdoor",
+        "adventure",
+        "off-road",
+        "nature"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Trail Setup",
+          "description": "Prepare for off-road or trail driving",
+          "steps": [
+            {
+              "feature": "Off-Road"
+            },
+            {
+              "feature": "High",
+              "note": "Raise suspension if available"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Base Camp",
+          "description": "Setup for camping or extended outdoor stay",
+          "steps": [
+            {
+              "feature": "Camp Mode"
+            },
+            {
+              "feature": "Windows Vent"
+            },
+            {
+              "delay": 2
+            },
+            {
+              "feature": "Interior Lights"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Night Security",
+          "description": "Enhanced security for remote camping",
+          "steps": [
+            {
+              "feature": "Lock"
+            },
+            {
+              "feature": "Safe Bluetooth Connect"
+            },
+            {
+              "feature": "Hazard Lights",
+              "note": "Visibility marker"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "date-night",
+      "name": "Date Night Mode",
+      "description": "Romantic and comfortable settings for special occasions",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "romantic",
+        "date",
+        "ambiance",
+        "comfort",
+        "entertainment"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Romantic Drive",
+          "description": "Smooth and comfortable driving",
+          "steps": [
+            {
+              "feature": "Chill"
+            },
+            {
+              "feature": "Volume Down",
+              "note": "Quiet music level"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Cozy Cabin",
+          "description": "Perfect cabin ambiance",
+          "steps": [
+            {
+              "feature": "Keep Climate On"
+            },
+            {
+              "feature": "Front Left Seat Heating/ Cooling"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Front Right Seat Heating/ Cooling "
+            },
+            {
+              "feature": "Ambient Light Effects"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Scenic Stop",
+          "description": "Perfect for scenic overlooks",
+          "steps": [
+            {
+              "feature": "Shift to P"
+            },
+            {
+              "feature": "Play / Pause / Mute"
+            },
+            {
+              "feature": "Interior Lights"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shopping-errands",
+      "name": "Shopping & Errands",
+      "description": "Optimized for quick stops, shopping, and running errands",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "shopping",
+        "errands",
+        "quick-stop",
+        "parking",
+        "convenience"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Quick Stop",
+          "description": "Fast setup for brief stops",
+          "steps": [
+            {
+              "feature": "Shift to P"
+            },
+            {
+              "feature": "Keep Climate On"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Shopping Mode",
+          "description": "Prepare for shopping trip",
+          "steps": [
+            {
+              "feature": "Lock"
+            },
+            {
+              "feature": "Trunk"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Interior Lights"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Load Groceries",
+          "description": "Maximum access for loading",
+          "steps": [
+            {
+              "feature": "Unlock"
+            },
+            {
+              "feature": "Frunk"
+            },
+            {
+              "feature": "Rear Left/Right Door"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "delivery-pickup",
+      "name": "Delivery & Pickup",
+      "description": "Optimized for delivery drivers and pickup services",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "delivery",
+        "pickup",
+        "rideshare",
+        "commercial",
+        "efficiency"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Quick Delivery",
+          "description": "Fast setup for delivery stops",
+          "steps": [
+            {
+              "feature": "Unlock"
+            },
+            {
+              "feature": "Very Short Honk",
+              "note": "Signal arrival"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Passenger Pickup",
+          "description": "Prepare for passenger pickup",
+          "steps": [
+            {
+              "feature": "Interior Lights"
+            },
+            {
+              "feature": "Keep Climate On"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Short Honk"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "End Service",
+          "description": "Complete delivery/pickup session",
+          "steps": [
+            {
+              "feature": "Lock"
+            },
+            {
+              "feature": "All Heaters Off"
+            },
+            {
+              "feature": "Play / Pause / Mute"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "maintenance-service",
+      "name": "Maintenance & Service",
+      "description": "Prepare vehicle for maintenance, service, or inspection",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "maintenance",
+        "service",
+        "inspection",
+        "technician",
+        "diagnostics"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Service Prep",
+          "description": "Basic service preparation",
+          "steps": [
+            {
+              "feature": "Shift to P"
+            },
+            {
+              "feature": "Set OFF",
+              "note": "Turn off wipers"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Full Access",
+          "description": "Complete access for technicians",
+          "steps": [
+            {
+              "feature": "Unlock"
+            },
+            {
+              "feature": "Frunk"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Trunk"
+            },
+            {
+              "feature": "Charge Port"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Diagnostic Mode",
+          "description": "Enable all systems for diagnostics",
+          "steps": [
+            {
+              "feature": "Interior Lights"
+            },
+            {
+              "feature": "Front Camera View"
+            },
+            {
+              "feature": "Voice Command"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "highway-cruiser",
+      "name": "Highway Cruiser Pro",
+      "description": "Ultimate highway comfort and efficiency for long-distance travel",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "highway",
+        "efficiency",
+        "cruise",
+        "comfort",
+        "long-distance"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Efficient Cruise",
+          "description": "Maximum efficiency settings",
+          "steps": [
+            {
+              "feature": "100%",
+              "note": "Max regen for efficiency"
+            },
+            {
+              "feature": "Cruise Control"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Comfort Cruise",
+          "description": "Balanced comfort and efficiency",
+          "steps": [
+            {
+              "feature": "75%"
+            },
+            {
+              "feature": "Toggle Autopilot"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Volume Up",
+              "note": "Highway music level"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Rest Area Stop",
+          "description": "Prepare for highway rest stop",
+          "steps": [
+            {
+              "feature": "Shift to P"
+            },
+            {
+              "feature": "Windows Vent",
+              "note": "Fresh air during stop"
+            },
+            {
+              "feature": "Charge Port",
+              "note": "Ready for charging if needed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "energy-saver",
+      "name": "Energy Conservation",
+      "description": "Maximize range and efficiency when battery is low",
+      "author": "f",
+      "supportedModels": [
+        "model 3",
+        "model y",
+        "model s",
+        "model x"
+      ],
+      "tags": [
+        "efficiency",
+        "range",
+        "battery",
+        "conservation",
+        "eco"
+      ],
+      "actions": {
+        "single_press": {
+          "name": "Range Mode",
+          "description": "Basic energy saving",
+          "steps": [
+            {
+              "feature": "Chill"
+            },
+            {
+              "feature": "100%",
+              "note": "Max regen for energy recovery"
+            }
+          ]
+        },
+        "double_press": {
+          "name": "Eco Mode",
+          "description": "Aggressive energy conservation",
+          "steps": [
+            {
+              "feature": "All Heaters Off"
+            },
+            {
+              "feature": "Fan speed MIN"
+            },
+            {
+              "delay": 1
+            },
+            {
+              "feature": "Low",
+              "note": "Lower suspension for aerodynamics"
+            }
+          ]
+        },
+        "long_press": {
+          "name": "Emergency Range",
+          "description": "Maximum conservation for emergencies",
+          "steps": [
+            {
+              "feature": "Climate System On/Off",
+              "note": "Turn off climate completely"
+            },
+            {
+              "feature": "Play / Pause / Mute"
+            },
+            {
+              "feature": "Set OFF",
+              "note": "Turn off wipers to save energy"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "version": "1.3.0",
+    "lastUpdated": "2024-08-23",
+    "totalScenarios": 30,
+    "contributors": 8
+  }
+}

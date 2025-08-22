@@ -1,0 +1,495 @@
+---
+layout: default
+---
+
+<div class="container">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <h1 class="site-title">
+                <i class="fas fa-car icon"></i>
+                <div class="title-group">
+                    <span class="title-main">S3XY Community</span>
+                    <span class="title-subtitle">Community-driven S3XY Button scenarios</span>
+                </div>
+            </h1>
+            
+            <nav class="tab-navigation">
+                <button class="tab-btn active" data-tab="scenarios">
+                    Custom Scenarios
+                </button>
+                <button class="tab-btn" data-tab="features">
+                    Button Features
+                </button>
+            </nav>
+        </div>
+        
+        <div class="header-right">
+            <div class="header-stats">
+                <span class="stat-item">
+                    <strong>{{ site.data.scenarios.scenarios | size }}</strong> scenarios
+                </span>
+                <span class="stat-separator">•</span>
+                <span class="stat-item">
+                    <strong id="total-features">179</strong> features
+                </span>
+            </div>
+            
+            <a href="https://github.com/f/s3xy.community" class="github-link" target="_blank" title="View on GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Controls -->
+    <div class="controls">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search..." class="search-input">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        
+        <div class="filter-container hidden">
+            <select id="model-filter" class="filter-select">
+                <option value="">All Models</option>
+                {% for model in site.data.features.yearModels %}
+                <option value="{{ model.name }} {{ model.year }}">{{ model.name | remove: "model " | upcase }} {{ model.year }}</option>
+                {% endfor %}
+            </select>
+            
+            <select id="device-filter" class="filter-select">
+                <option value="">All Devices</option>
+                <option value="knobs">Knobs</option>
+                <option value="buttons">Buttons</option>
+                <option value="stalks">Stalks</option>
+            </select>
+            
+            <select id="category-filter" class="filter-select">
+                <option value="">All Categories</option>
+                {% for category in site.data.features.categories %}
+                <option value="{{ category.name }}">{{ category.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        
+
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+        <div class="legend-item">
+            <span class="device-badge knobs"><i class="fas fa-circle"></i></span>
+            <span>Knobs</span>
+        </div>
+        <div class="legend-item">
+            <span class="device-badge buttons"><i class="fas fa-caret-up"></i></span>
+            <span>Buttons</span>
+        </div>
+        <div class="legend-item">
+            <span class="device-badge stalks"><i class="fas fa-arrow-turn-up"></i></span>
+            <span>Stalks</span>
+        </div>
+        <div class="legend-item">
+            <span class="press-indicator single">1</span>
+            <span>Single Press</span>
+        </div>
+        <div class="legend-item">
+            <span class="press-indicator double">2</span>
+            <span>Double Press</span>
+        </div>
+        <div class="legend-item">
+            <span class="press-indicator long">L</span>
+            <span>Long Press</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Custom Scenarios Tab -->
+        <div class="tab-content active" id="scenarios-tab">
+            <div class="scenarios-intro">
+                <p>Community-created button combinations for specific use cases. Each scenario has different actions for single press, double press, and long press.</p>
+                <button class="contribute-btn" id="open-scenario-builder">
+                    + Contribute a Scenario
+                </button>
+            </div>
+            
+            <div class="custom-scenarios-grid">
+                {% for scenario in site.data.scenarios.scenarios %}
+                <div class="custom-scenario-card" data-id="{{ scenario.id }}" data-name="{{ scenario.name | downcase }}">
+                    <div class="scenario-header">
+                        <h3 class="scenario-title">{{ scenario.name }}</h3>
+                        <a href="https://github.com/{{ scenario.author }}" class="scenario-author" target="_blank">by {{ scenario.author }}</a>
+                    </div>
+                    
+                    <p class="scenario-description">{{ scenario.description }}</p>
+                    
+                    <div class="scenario-tags">
+                        {% for tag in scenario.tags %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="scenario-models">
+                        <span class="models-label">Works with:</span>
+                        {% for model in scenario.supportedModels %}
+                        <span class="model-badge">{{ model | remove: "model " | upcase }}</span>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="scenario-actions">
+                        <div class="action-group">
+                            <div class="action-header">
+                                <span class="press-indicator single">1</span>
+                                <strong>{{ scenario.actions.single_press.name }}</strong>
+                            </div>
+                            <p class="action-description">{{ scenario.actions.single_press.description }}</p>
+                            <ul class="action-steps">
+                                {% for step in scenario.actions.single_press.steps %}
+                                <li>
+                                    {% if step.delay %}
+                                    <span class="step-delay"><i class="fas fa-clock"></i> Wait {{ step.delay }}s</span>
+                                    {% else %}
+                                    {% assign feature_note = nil %}
+                                    {% for category in site.data.features.categories %}
+                                        {% for feat in category.scenarios %}
+                                            {% if feat.name == step.feature %}
+                                                {% assign feature_note = feat.notes %}
+                                                {% break %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {% if feature_note %}{% break %}{% endif %}
+                                    {% endfor %}
+                                    <span class="step-feature" {% if feature_note %}data-tooltip="{{ feature_note }}"{% endif %}>{{ step.feature }}</span>
+                                    {% if step.note %}
+                                    <span class="step-note">({{ step.note }})</span>
+                                    {% endif %}
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        
+                        <div class="action-group">
+                            <div class="action-header">
+                                <span class="press-indicator double">2</span>
+                                <strong>{{ scenario.actions.double_press.name }}</strong>
+                            </div>
+                            <p class="action-description">{{ scenario.actions.double_press.description }}</p>
+                            <ul class="action-steps">
+                                {% for step in scenario.actions.double_press.steps %}
+                                <li>
+                                    {% if step.delay %}
+                                    <span class="step-delay"><i class="fas fa-clock"></i> Wait {{ step.delay }}s</span>
+                                    {% else %}
+                                    {% assign feature_note = nil %}
+                                    {% for category in site.data.features.categories %}
+                                        {% for feat in category.scenarios %}
+                                            {% if feat.name == step.feature %}
+                                                {% assign feature_note = feat.notes %}
+                                                {% break %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {% if feature_note %}{% break %}{% endif %}
+                                    {% endfor %}
+                                    <span class="step-feature" {% if feature_note %}data-tooltip="{{ feature_note }}"{% endif %}>{{ step.feature }}</span>
+                                    {% if step.note %}
+                                    <span class="step-note">({{ step.note }})</span>
+                                    {% endif %}
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        
+                        <div class="action-group">
+                            <div class="action-header">
+                                <span class="press-indicator long">L</span>
+                                <strong>{{ scenario.actions.long_press.name }}</strong>
+                            </div>
+                            <p class="action-description">{{ scenario.actions.long_press.description }}</p>
+                            <ul class="action-steps">
+                                {% for step in scenario.actions.long_press.steps %}
+                                <li>
+                                    {% if step.delay %}
+                                    <span class="step-delay"><i class="fas fa-clock"></i> Wait {{ step.delay }}s</span>
+                                    {% else %}
+                                    {% assign feature_note = nil %}
+                                    {% for category in site.data.features.categories %}
+                                        {% for feat in category.scenarios %}
+                                            {% if feat.name == step.feature %}
+                                                {% assign feature_note = feat.notes %}
+                                                {% break %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {% if feature_note %}{% break %}{% endif %}
+                                    {% endfor %}
+                                    <span class="step-feature" {% if feature_note %}data-tooltip="{{ feature_note }}"{% endif %}>{{ step.feature }}</span>
+                                    {% if step.note %}
+                                    <span class="step-note">({{ step.note }})</span>
+                                    {% endif %}
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <!-- Features Tab -->
+        <div class="tab-content" id="features-tab">
+            <div class="features-intro">
+                <p>All available button features that can be assigned to S3XY buttons. These are the building blocks for custom scenarios.</p>
+            </div>
+            
+            {% for category in site.data.features.categories %}
+            <section class="category-section" data-category="{{ category.name }}">
+                <h2 class="category-title">
+                    {{ category.name }}
+                    <span class="category-count">({{ category.scenarios | size }})</span>
+                </h2>
+                
+                <div class="features-grid">
+                    {% for feature in category.scenarios %}
+                    {% assign all_models = "" %}
+                    {% for device in feature.supportedDevices.knobs %}
+                        {% assign model_string = device.name | append: " " | append: device.year %}
+                        {% assign all_models = all_models | append: model_string | append: ";" %}
+                    {% endfor %}
+                    {% for device in feature.supportedDevices.buttons %}
+                        {% assign model_string = device.name | append: " " | append: device.year %}
+                        {% assign all_models = all_models | append: model_string | append: ";" %}
+                    {% endfor %}
+                    {% for device in feature.supportedDevices.stalks %}
+                        {% assign model_string = device.name | append: " " | append: device.year %}
+                        {% assign all_models = all_models | append: model_string | append: ";" %}
+                    {% endfor %}
+                    <div class="feature-card" 
+                         data-id="{{ feature.id }}"
+                         data-name="{{ feature.name | downcase }}"
+                         data-category="{{ category.name }}"
+                         data-knobs="{{ feature.supportedDevices.knobs | size }}"
+                         data-buttons="{{ feature.supportedDevices.buttons | size }}"
+                         data-stalks="{{ feature.supportedDevices.stalks | size }}"
+                         data-models="{{ all_models | downcase }}">
+                        
+                        <div class="feature-header">
+                            <h3 class="feature-name">{{ feature.name }}</h3>
+                            <span class="feature-id">#{{ feature.id }}</span>
+                        </div>
+                        
+                        {% if feature.notes %}
+                        <p class="feature-notes">{{ feature.notes }}</p>
+                        {% endif %}
+                        
+                        <div class="device-support">
+                            {% if feature.supportedDevices.knobs.size > 0 %}
+                            <div class="device-group">
+                                <span class="device-badge knobs" title="Knobs"><i class="fas fa-circle"></i></span>
+                                <span class="device-count">
+                                    {% if feature.supportedDevices.knobs.size >= 7 %}
+                                        All models
+                                    {% else %}
+                                        {{ feature.supportedDevices.knobs | size }} models
+                                    {% endif %}
+                                </span>
+                            </div>
+                            {% endif %}
+                            
+                            {% if feature.supportedDevices.buttons.size > 0 %}
+                            <div class="device-group">
+                                <span class="device-badge buttons" title="Buttons"><i class="fas fa-caret-up"></i></span>
+                                <span class="device-count">
+                                    {% if feature.supportedDevices.buttons.size >= 7 %}
+                                        All models
+                                    {% else %}
+                                        {{ feature.supportedDevices.buttons | size }} models
+                                    {% endif %}
+                                </span>
+                            </div>
+                            {% endif %}
+                            
+                            {% if feature.supportedDevices.stalks.size > 0 %}
+                            <div class="device-group">
+                                <span class="device-badge stalks" title="Stalks"><i class="fas fa-arrow-turn-up"></i></span>
+                                <span class="device-count">
+                                    {% if feature.supportedDevices.stalks.size >= 7 %}
+                                        All models
+                                    {% else %}
+                                        {{ feature.supportedDevices.stalks | size }} models
+                                    {% endif %}
+                                </span>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endfor %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                <a href="https://github.com/f/s3xy.community" target="_blank" rel="noopener">
+                    View on GitHub
+                </a>
+                •
+                <a href="https://github.com/f/s3xy.community/blob/main/_data/scenarios.json" target="_blank" rel="noopener">
+                    Edit Data
+                </a>
+                •
+                <a href="https://github.com/f/s3xy.community/issues" target="_blank" rel="noopener">
+                    Report Issue
+                </a>
+            </p>
+            <p class="copyright">
+                Open source project for Tesla S3XY button enthusiasts. No affiliation with Tesla or Enhauto.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Scenario Builder Modal -->
+    <div id="scenario-builder-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create New Scenario</h2>
+                <button class="modal-close" id="close-modal">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Basic Info -->
+                <div class="builder-section">
+                    <h3>Basic Information</h3>
+                    <div class="form-group">
+                        <label for="scenario-name">Scenario Name *</label>
+                        <input type="text" id="scenario-name" placeholder="e.g., Quick Climate Control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="scenario-description">Description *</label>
+                        <textarea id="scenario-description" rows="3" placeholder="Describe what this scenario does..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="scenario-author">Your GitHub Username *</label>
+                        <input type="text" id="scenario-author" placeholder="e.g., johndoe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Supported Models</label>
+                        <div class="model-checkboxes">
+                            <label><input type="checkbox" value="S" checked> Model S</label>
+                            <label><input type="checkbox" value="3" checked> Model 3</label>
+                            <label><input type="checkbox" value="X" checked> Model X</label>
+                            <label><input type="checkbox" value="Y" checked> Model Y</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Actions Builder -->
+                <div class="builder-section">
+                    <h3>Button Actions</h3>
+                    
+                    <!-- Single Press -->
+                    <div class="action-builder">
+                        <h4><span class="press-indicator single">1</span> Single Press</h4>
+                        <div class="form-group">
+                            <input type="text" class="action-name" data-press="single_press" placeholder="Action name (e.g., Enable climate)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="action-description" data-press="single_press" placeholder="Description">
+                        </div>
+                        <div class="steps-builder" data-press="single_press">
+                            <div class="steps-list"></div>
+                            <button class="add-step-btn" data-press="single_press">+ Add Step</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Double Press -->
+                    <div class="action-builder">
+                        <h4><span class="press-indicator double">2</span> Double Press</h4>
+                        <div class="form-group">
+                            <input type="text" class="action-name" data-press="double_press" placeholder="Action name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="action-description" data-press="double_press" placeholder="Description">
+                        </div>
+                        <div class="steps-builder" data-press="double_press">
+                            <div class="steps-list"></div>
+                            <button class="add-step-btn" data-press="double_press">+ Add Step</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Long Press -->
+                    <div class="action-builder">
+                        <h4><span class="press-indicator long">L</span> Long Press</h4>
+                        <div class="form-group">
+                            <input type="text" class="action-name" data-press="long_press" placeholder="Action name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="action-description" data-press="long_press" placeholder="Description">
+                        </div>
+                        <div class="steps-builder" data-press="long_press">
+                            <div class="steps-list"></div>
+                            <button class="add-step-btn" data-press="long_press">+ Add Step</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="btn-secondary" id="preview-json">Preview JSON</button>
+                <button class="btn-primary" id="create-issue">Create GitHub Issue</button>
+            </div>
+            
+            <!-- JSON Preview -->
+            <div id="json-preview" class="json-preview hidden">
+                <h3>JSON Preview</h3>
+                <pre><code id="json-output"></code></pre>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Feature Selector Modal -->
+    <div id="feature-selector-modal" class="modal">
+        <div class="modal-content modal-narrow">
+            <div class="modal-header">
+                <h3>Select Feature</h3>
+                <button class="modal-close close-feature-selector">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="feature-search" placeholder="Search features..." class="feature-search">
+                <div class="feature-categories">
+                    {% for category in site.data.features.categories %}
+                    <div class="feature-category">
+                        <h4>{{ category.name }}</h4>
+                        <div class="feature-options">
+                            {% for feature in category.scenarios %}
+                            <button class="feature-option" data-feature="{{ feature.name | escape }}">
+                                {{ feature.name }}
+                                {% if feature.notes %}
+                                <span class="feature-hint">{{ feature.notes | truncate: 50 }}</span>
+                                {% endif %}
+                            </button>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Calculate totals
+document.addEventListener('DOMContentLoaded', function() {
+    const totalFeatures = document.querySelectorAll('.feature-card').length;
+    document.getElementById('total-features').textContent = totalFeatures;
+});
+</script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/scenario-builder.js' | relative_url }}"></script>

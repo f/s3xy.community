@@ -1,0 +1,57 @@
+{
+  "id": "your-unique-scenario-id",
+  "name": "Your Scenario Name",
+  "description": "A clear description of what this scenario does and when to use it",
+  "author": "YourGitHubUsername",
+  "supportedModels": ["model 3", "model y", "model s", "model x"],
+  "tags": ["tag1", "tag2", "tag3"],
+  "actions": {
+    "single_press": {
+      "name": "Quick Action Name",
+      "description": "What happens on a single press",
+      "steps": [
+        {
+          "feature": "Feature Name (must match exactly from features list)",
+          "note": "Optional note about this step"
+        },
+        {
+          "delay": 2
+        },
+        {
+          "feature": "Another Feature"
+        }
+      ]
+    },
+    "double_press": {
+      "name": "Double Press Action Name",
+      "description": "What happens on a double press",
+      "steps": [
+        {
+          "feature": "Feature Name"
+        },
+        {
+          "delay": 1
+        },
+        {
+          "feature": "Another Feature",
+          "note": "Optional: explain this feature"
+        }
+      ]
+    },
+    "long_press": {
+      "name": "Long Press Action Name",
+      "description": "What happens on a long press",
+      "steps": [
+        {
+          "feature": "Feature Name"
+        },
+        {
+          "delay": 3
+        },
+        {
+          "feature": "Another Feature"
+        }
+      ]
+    }
+  }
+}

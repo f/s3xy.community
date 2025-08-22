@@ -1,0 +1,33 @@
+# Jekyll configuration for s3xy.community
+title: "S3XY Community"
+description: "A comprehensive list of all S3XY button scenarios for Tesla vehicles"
+url: "https://s3xy.community"
+baseurl: "/"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+# Exclude files from build
+exclude:
+  - data.js
+  - convert-data.js
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  scenarios:
+    output: false
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
